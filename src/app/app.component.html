@@ -1,0 +1,21 @@
+<!-- <div class="container" *ngFor="let video of videos">
+  <a href="/img/{{video}}.mkv">
+    <img src="http://192.168.1.5:8082/cod/{{video}}"/>
+  </a>
+</div> -->
+
+<div class="container" *ngFor="let video of videos">
+  <video controls preload="none">
+    <source src="http://192.168.1.5:8082/cod/{{video}}">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- <button (click)="getWeather()">CLICA FILHO DA PUTA</button> -->
+
+<!-- <p *ngFor="let weather of weathers">
+  <span> Data: {{ weather.date }} </span>
+  <span> TemperaturaC: {{ weather.temperatureC }} </span>
+  <span> TemperaturaF: {{ weather.temperatureF }} </span>
+  <span> Resumo: {{ weather.summary }} </span>
+</p> -->

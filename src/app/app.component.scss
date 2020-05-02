@@ -1,0 +1,42 @@
+.container {
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  &:hover {
+    z-index: 1;
+    transition: all 500ms;
+  }
+  @media screen and (min-width: 2000px) {
+    width: 10%;
+    // &:hover {
+    //   width: 15%;
+    // }
+  }
+  @media screen and (max-width: 2000px) {
+    width: 25%;
+    // &:hover {
+    //   width: 30%;
+    // }
+  }
+  @media screen and (max-width: 1000px) {
+    width: 50%;
+    // &:hover {
+    //   width: 55%;
+    // }
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    // &:hover {
+    //   width: 105%;
+    // }
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
