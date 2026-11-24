@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "security:critical": "node scripts/check-critical-dev-deps.cjs"
   },
   "private": true,
   "dependencies": {
